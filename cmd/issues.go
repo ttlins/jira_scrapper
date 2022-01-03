@@ -13,8 +13,8 @@ import (
 
 var issuesCmd = &cobra.Command{
 	Use:   "issues",
-	Short: "",
-	Long:  ``,
+	Short: "lists sprints issues",
+	Long:  `iterates through all projects defined in the configuration file, tries to fetch the sprints cache for each of them and then fetches the issues for each of the sprints in the cache. Requires the sprints command to be run first`,
 	Run: func(cmd *cobra.Command, args []string) {
 		s := buildScrapper()
 		runProjects(func(p config.Project) error {

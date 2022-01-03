@@ -1,0 +1,8 @@
+jira:
+  token: jira_personal_access_token
+  host: https://jira.myorg.com/
+  projects:
+    - key: ABC
+      boardId: 10
+    - key: DEF
+      boardId: 20

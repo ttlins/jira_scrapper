@@ -9,8 +9,8 @@ import (
 
 var boardsCmd = &cobra.Command{
 	Use:   "boards",
-	Short: "",
-	Long:  ``,
+	Short: "lists the boards by project key",
+	Long:  `iterates all projects in the configuration and returns all boards for each of them. Can be used to help in the configuration (finding board_id for your projects)`,
 	Run: func(cmd *cobra.Command, args []string) {
 		s := buildScrapper()
 		for _, p := range getProjects() {
