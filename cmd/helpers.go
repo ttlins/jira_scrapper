@@ -36,3 +36,15 @@ func buildScrapper() *scrapper.Scrapper {
 		c.Sprint,
 	)
 }
+
+func runProjects(run func(p config.Project) error) {
+	for _, p := range getProjects() {
+		if p.BoardID == 0 {
+			log.Printf("board_id for project %q not defined. skipping project", p.Key)
+			continue
+		}
+		if err := run(p); err != nil {
+			log.Printf("error running command for project %q board %d: %v", p.Key, p.BoardID, err)
+		}
+	}
+}

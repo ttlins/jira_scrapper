@@ -18,7 +18,7 @@ var (
 
 type Project struct {
 	Key     string `yaml:"key" validate:"required"`
-	BoardID int    `yaml:"boardId" validate:"required"`
+	BoardID int    `yaml:"boardId"`
 }
 
 type Configuration struct {

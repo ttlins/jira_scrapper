@@ -17,13 +17,14 @@ var issuesCmd = &cobra.Command{
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
 		s := buildScrapper()
-		for _, p := range getProjects() {
+		runProjects(func(p config.Project) error {
 			for _, sp := range loadCachedSprints(p).Sprints {
 				if err := service.NewIssues(s, sp, p.Key).Call(); err != nil {
 					log.Printf("failed to fetch issues for sprint %d: %v", sp.ID, err)
 				}
 			}
-		}
+			return nil
+		})
 	},
 }
 
