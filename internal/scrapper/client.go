@@ -11,7 +11,7 @@ type (
 		GetAllSprintsWithOptions(boardID int, opts *jira.GetAllSprintsOptions) (*jira.SprintsList, *jira.Response, error)
 	}
 	SprintService interface {
-		GetIssuesForSprint(sprintID int, options *jira.GetQueryOptions) ([]jira.Issue, *jira.Response, error)
+		GetIssuesForSprintWithOptions(sprintID int, options *jira.GetQueryOptions) ([]jira.Issue, *jira.Response, error)
 	}
 )
 

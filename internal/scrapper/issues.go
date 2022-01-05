@@ -38,7 +38,7 @@ func (s *Scrapper) GetIssues(
 	sp jira.Sprint,
 	projectKey string,
 ) (*GetIssuesResult, error) {
-	is, _, err := s.GetIssuesForSprint(sp.ID, getQueryOpts())
+	is, _, err := s.GetIssuesForSprintWithOptions(sp.ID, getQueryOpts())
 	if err != nil {
 		return nil, err
 	}
