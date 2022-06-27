@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/andygrunwald/go-jira"
+	"github.com/titolins/go-jira"
 )
 
 type GetBoardsResult struct {

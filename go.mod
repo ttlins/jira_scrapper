@@ -2,15 +2,14 @@ module github.com/titolins/jira_scrapper
 
 go 1.17
 
-replace github.com/andygrunwald/go-jira => /Users/temporaryadmin/go/src/github.com/titolins/go-jira
-
 require (
-	github.com/andygrunwald/go-jira v1.14.1-0.20211222203657-8a363becbffb
+	github.com/andygrunwald/go-jira v1.15.1
 	github.com/c-bata/go-prompt v0.2.6
 	github.com/go-playground/validator v9.31.0+incompatible
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.3.0
 	github.com/spf13/viper v1.10.0
+	github.com/titolins/go-jira v1.14.1-0.20220627081415-930a1c93a279
 )
 
 require (
@@ -18,7 +17,7 @@ require (
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
-	github.com/golang-jwt/jwt/v4 v4.2.0 // indirect
+	github.com/golang-jwt/jwt/v4 v4.3.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect

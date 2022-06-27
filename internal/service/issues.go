@@ -3,7 +3,7 @@ package service
 import (
 	"strconv"
 
-	"github.com/andygrunwald/go-jira"
+	"github.com/titolins/go-jira"
 	"github.com/titolins/jira_scrapper/internal/cache"
 	"github.com/titolins/jira_scrapper/internal/handler"
 	"github.com/titolins/jira_scrapper/internal/scrapper"

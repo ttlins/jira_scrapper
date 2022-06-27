@@ -1,7 +1,7 @@
 package scrapper
 
 import (
-	"github.com/andygrunwald/go-jira"
+	"github.com/titolins/go-jira"
 	"github.com/titolins/jira_scrapper/config"
 )
 

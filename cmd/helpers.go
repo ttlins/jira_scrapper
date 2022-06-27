@@ -3,7 +3,7 @@ package cmd
 import (
 	"log"
 
-	jira "github.com/andygrunwald/go-jira"
+	jira "github.com/titolins/go-jira"
 	"github.com/titolins/jira_scrapper/config"
 	"github.com/titolins/jira_scrapper/internal/scrapper"
 )
